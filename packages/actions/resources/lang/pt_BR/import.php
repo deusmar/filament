@@ -12,7 +12,12 @@ return [
 
             'file' => [
                 'label' => 'Arquivo',
+
                 'placeholder' => 'Enviar um arquivo CSV',
+
+                'rules' => [
+                    'duplicate_columns' => '{0} O arquivo não deve conter mais de um cabeçalho de coluna vazio.|{1,*} O arquivo não deve conter cabeçalhos de coluna duplicados: :columns.',
+                ],
             ],
 
             'columns' => [
@@ -72,6 +77,7 @@ return [
         'file_name' => 'import-:import_id-:csv_name-failed-rows',
         'error_header' => 'erro',
         'system_error' => 'Erro de sistema, por favor, entre em contato com o suporte.',
+        'column_mapping_required_for_new_record' => 'A coluna :attribute não foi mapeada para uma coluna no arquivo, mas é necessária para criar novos registros.',
     ],
 
 ];

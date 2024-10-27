@@ -11,15 +11,67 @@ return [
             ],
 
             'add' => [
-                'label' => 'Adicionar em :label',
+
+                'label' => 'Adicionar a :label',
+
+                'modal' => [
+
+                    'heading' => 'Adicionar a :label',
+
+                    'actions' => [
+
+                        'add' => [
+                            'label' => 'Adicionar',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'add_between' => [
-                'label' => 'Inserir',
+
+                'label' => 'Inserir entre blocos',
+
+                'modal' => [
+
+                    'heading' => 'Adicionar a :label',
+
+                    'actions' => [
+
+                        'add' => [
+                            'label' => 'Adicionar',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'delete' => [
                 'label' => 'Excluir',
+            ],
+
+            'edit' => [
+
+                'label' => 'Editar',
+
+                'modal' => [
+
+                    'heading' => 'Editar bloco',
+
+                    'actions' => [
+
+                        'save' => [
+                            'label' => 'Salvar alterações',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'reorder' => [
@@ -43,11 +95,11 @@ return [
             ],
 
             'collapse_all' => [
-                'label' => 'Recolher todos',
+                'label' => 'Recolher tudo',
             ],
 
             'expand_all' => [
-                'label' => 'Expandir todos',
+                'label' => 'Expandir tudo',
             ],
 
         ],
@@ -59,11 +111,11 @@ return [
         'actions' => [
 
             'deselect_all' => [
-                'label' => 'Desmarcar todos',
+                'label' => 'Desmarcar tudo',
             ],
 
             'select_all' => [
-                'label' => 'Marcar todos',
+                'label' => 'Selecionar tudo',
             ],
 
         ],
@@ -101,11 +153,11 @@ return [
                 ],
 
                 'move_left' => [
-                    'label' => 'Mover imagem para esquerda',
+                    'label' => 'Mover imagem para a esquerda',
                 ],
 
                 'move_right' => [
-                    'label' => 'Mover imagem para direita',
+                    'label' => 'Mover imagem para a direita',
                 ],
 
                 'move_up' => [
@@ -113,15 +165,15 @@ return [
                 ],
 
                 'reset' => [
-                    'label' => 'Limpar',
+                    'label' => 'Redefinir',
                 ],
 
                 'rotate_left' => [
-                    'label' => 'Rotacionar imagem para esquerda',
+                    'label' => 'Girar imagem para a esquerda',
                 ],
 
                 'rotate_right' => [
-                    'label' => 'Rotacionar imagem para direita',
+                    'label' => 'Girar imagem para a direita',
                 ],
 
                 'set_aspect_ratio' => [
@@ -133,15 +185,15 @@ return [
                 ],
 
                 'zoom_100' => [
-                    'label' => 'Ampliar imagem para 100%',
+                    'label' => 'Zoom para 100%',
                 ],
 
                 'zoom_in' => [
-                    'label' => 'Mais zoom',
+                    'label' => 'Aumentar zoom',
                 ],
 
                 'zoom_out' => [
-                    'label' => 'Menos zoom',
+                    'label' => 'Reduzir zoom',
                 ],
 
             ],
@@ -188,8 +240,8 @@ return [
             'svg' => [
 
                 'messages' => [
-                    'confirmation' => 'Não é recomendado editar arquivos SVG, pois pode resultar em perda de qualidade ao dimensionar.\n Você tem certeza de que deseja continuar?',
-                    'disabled' => 'A edição de arquivos SVG está desativada, pois pode resultar em perda de qualidade ao dimensionar.',
+                    'confirmation' => 'A edição de arquivos SVG não é recomendada, pois pode resultar em perda de qualidade ao redimensionar.\n Tem certeza de que deseja continuar?',
+                    'disabled' => 'A edição de arquivos SVG está desativada, pois pode resultar em perda de qualidade ao redimensionar.',
                 ],
 
             ],
